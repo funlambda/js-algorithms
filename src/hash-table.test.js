@@ -27,11 +27,10 @@ describe('Hash Table', () => {
     expect(ht.Contains(hashTable, 12)).toEqual(false);
   });
 
-  test('Print', () => {
-    const x = ht.ToPrintable(hashTable);
-    console.log(x);
-  });
-
+  // test('Print', () => {
+  //   const x = ht.ToPrintable(hashTable);
+  //   console.log(x);
+  // });
   test('Remove', () => {
     ht.Remove(hashTable, 14);
     expect(ht.Contains(hashTable, 14)).toEqual(false);
